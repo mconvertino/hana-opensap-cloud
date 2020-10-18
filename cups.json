@@ -1,0 +1,9 @@
+{
+    "user": "CUPS_SFLIGHT",
+    "password": "HanaRocks01",
+    "driver": "com.sap.db.jdbc.Driver",
+    "tags": [
+        "hana"
+    ],
+    "schema": "SFLIGHT"
+}

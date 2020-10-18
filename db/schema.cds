@@ -3,6 +3,7 @@ using from './schema/conversions';
 using from './schema/log';
 using from './schema/masterData';
 using from './schema/purchaseOrder';
+using from './schema/SFLIGHT';
 
 entity Base {
     ID : Integer;
