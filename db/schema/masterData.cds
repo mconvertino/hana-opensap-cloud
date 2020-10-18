@@ -7,7 +7,7 @@ using {
 } from '@sap/cds/common';
 
 using {opensap.common} from './common';
-//using {opensap.PurchaseOrder} from './purchaseOrder';
+using {opensap.PurchaseOrder} from './purchaseOrder';
 
 namespace opensap.MD;
 
@@ -141,7 +141,6 @@ define view BPAddrExt as
         address.street || ', ' || address.city as FULLADDRESS
     };
 
-/*
 define view BPView as
     select from BusinessPartners
     mixin {
@@ -176,7 +175,6 @@ view BPOrders3View as
         ORDERS[lifecycleStatus = 'N'].item[netAmount > 200].netAmount
 
     };
-*/
 
 define view BuyerView as
     select from BusinessPartners {
@@ -425,7 +423,6 @@ entity ProductLog {
         LOGTEXT   : String(500);
 };
 
-/*
 define view ProductViewSub as
     select from Products as prod {
         productId as ![Product_Id],
@@ -465,8 +462,6 @@ define view ProductView as
         partner.address.country    as![Supplier_Country],
         PO_ORDERS
     };
-
-*/
 
 define view ProductsValueHelp as
     select from Products {
@@ -639,7 +634,6 @@ define view ProductsConsumption as
         partner.address.country    as![Supplier_Country]
     };
 
-/*
 define view ProductValuesView as
     select from ProductView {
         Product_Id,
@@ -651,5 +645,3 @@ define view ProductValuesView as
     group by
         Product_Id,
         PO_ORDERS.CurrencyCode;
-
-*/
