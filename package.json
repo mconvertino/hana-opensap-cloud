@@ -6,9 +6,9 @@
     "license": "UNLICENSED",
     "private": true,
     "dependencies": {
-        "@sap/cds": "^4",
+        "@sap/cds": "^4.2",
         "express": "^4",
-        "@sap/hana-client": "^2.4.177"
+        "@sap/hana-client": "^2.6"
     },
     "scripts": {
         "start": "cds run",
@@ -34,6 +34,15 @@
                         "model": [
                             "db",
                             "srv"
+                        ]
+                    }
+                },
+                 {
+                    "src": "user_db",
+                    "for": "hana",
+                    "options": {
+                        "model": [
+                            "user_db"
                         ]
                     }
                 },
